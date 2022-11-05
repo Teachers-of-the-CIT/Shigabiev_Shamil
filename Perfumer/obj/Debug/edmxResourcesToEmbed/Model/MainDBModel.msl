@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ParfumerModelContainer" CdmEntityContainer="ParfumerEntities">
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="ParfumerModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Delivery_date" ColumnName="Delivery_date" />
+          <ScalarProperty Name="Point_Of_Issue" ColumnName="Point_Of_Issue" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Receipt_Code" ColumnName="Receipt_Code" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderProduct">
+      <EntityTypeMapping TypeName="ParfumerModel.OrderProduct">
+        <MappingFragment StoreEntitySet="OrderProduct">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Order_Id" ColumnName="Order_Id" />
+          <ScalarProperty Name="Product_Articul" ColumnName="Product_Articul" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Point_Of_Issue">
+      <EntityTypeMapping TypeName="ParfumerModel.Point_Of_Issue">
+        <MappingFragment StoreEntitySet="Point_Of_Issue">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Building" ColumnName="Building" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="ParfumerModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Articul" ColumnName="Articul" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="DiscountMax" ColumnName="DiscountMax" />
+          <ScalarProperty Name="Developer" ColumnName="Developer" />
+          <ScalarProperty Name="Provider" ColumnName="Provider" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="DiscountCurrent" ColumnName="DiscountCurrent" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="ParfumerModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
