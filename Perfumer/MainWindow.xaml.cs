@@ -24,5 +24,12 @@ namespace Perfumer
         {
             InitializeComponent();
         }
+
+        private void AuthorizeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.GoodsPage Gp = new Windows.GoodsPage();
+            Gp.Show();
+            this.Close();
+        }
     }
 }

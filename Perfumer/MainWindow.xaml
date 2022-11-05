@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Perfumer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="25"/>
+        </Style>
+    </Window.Resources>
     <Grid>
-        
+        <TextBlock Text="Страница авторизации" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="35" FontWeight="Bold"/>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Логин:"/>
+                <TextBox x:Name="LoginTbx" Margin="15,0,0,0" Width="400" FontSize="25"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <TextBlock Text="Пароль:"/>
+                <TextBox x:Name="PasswordTbx" Margin="15,0,0,0" Width="300" FontSize="25"/>
+            </StackPanel>
+            <Button x:Name="AuthorizeBtn" Content="Авторизоваться" Width="300" Margin="10" FontSize="25" Background="#A5E887" Click="AuthorizeBtn_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -25,5 +25,12 @@ namespace Perfumer.Model
         public Nullable<int> Amount { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
+        public string ImgPath
+        {
+            get
+            {
+                return "/Resources" + this.Articul + ".jpg";
+            }
+        }
     }
 }
